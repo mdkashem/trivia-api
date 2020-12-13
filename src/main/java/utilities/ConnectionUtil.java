@@ -12,7 +12,7 @@ public static Connection getConnection() throws SQLException {
 			e.printStackTrace();
 		}
 		
-		String url = /*"jdbc:postgresql://127.0.0.1:5432/trivia";*/"jdbc:postgresql://examprodb.cdkzjpqxoidk.us-east-2.rds.amazonaws.com:5432/trivia";//System.getenv("project1_aws_dbString");
+		String url = /*"jdbc:postgresql://127.0.0.1:5432/trivia";;//System.getenv("project1_aws_dbString");
 		String username = "postgres";//System.getenv("dbUserName");
 		String password = "Bangladesh88";//System.getenv("dbPassword"); 
 		
