@@ -44,12 +44,9 @@ public class LoginController {
 
 				String body = new String(s);
 
-				System.out.println(body);
-
 				LoginDTO log = om.readValue(body, LoginDTO.class);
 
 				Player foundUser = (Player) loginDAOImpl.player_login(log.getUsername(), log.getPassword());
-
 
 				if (foundUser != null) {
 					
@@ -113,7 +110,6 @@ public class LoginController {
 				LoginDTO log = om.readValue(body, LoginDTO.class);
 
 				User foundUser = loginDAOImpl.admin_login(log.getUsername(), log.getPassword());
-				
 				if (foundUser != null) {
 					
 					Role role = foundUser.getRole();
